@@ -7,6 +7,7 @@
  *
  * Description - Checks number if positive or not
  *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
@@ -16,15 +17,15 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	if (n > 0)
 	{
-		printf("%d is positive", n);
+		printf("%d is positive\n", n);
 	}
 	else if (n == 0)
 	{
-		printf("%d is zero", n);
+		printf("%d is zero\n", n);
 	}
 	else
 	{
-		printf("%d is negative", n);
+		printf("%d is negative\n", n);
 	}
 	return (0);
 }
