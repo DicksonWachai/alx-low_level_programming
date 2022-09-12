@@ -16,7 +16,10 @@ int main(void)
 		{
 			continue;
 		}
-		putchar(ch);
+		else 
+		{
+			putchar(ch);
+		}
 	}
 	putchar('\n');
 	return (0);
