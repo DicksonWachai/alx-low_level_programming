@@ -11,18 +11,16 @@ int main(void)
 	int i;
 	int n;
 
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 8; i++)
 	{
-		for (n = 0; n < 10; n++)
+		for (n = 0; n < 9; n++)
 		{
-			if (i < n)
-			{
-				putchar('0' + i);
-				putchar('0' + n);
-				putchar(',');
-				putchar(' ');
+			putchar('0' + (i % 10));
+			putchar('0' + (n % 10));
+			if (i == 8 && n == 9)
 				break;
-			}
+			putchar(',');
+			putchar(' ');		
 		}
 	}
 	putchar('\n');
