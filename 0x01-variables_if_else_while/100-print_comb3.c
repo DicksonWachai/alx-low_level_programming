@@ -19,12 +19,9 @@ int main(void)
 			{
 				putchar('0' + i);
 				putchar('0' + n);
-				if (n == 9)
-				{
-					break;
-				}
 				putchar(',');
 				putchar(' ');
+				break;
 			}
 		}
 	}
