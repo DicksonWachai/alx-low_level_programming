@@ -18,7 +18,7 @@ int main(void)
 			putchar('0' + i);
 			putchar('0' + n);
 			if (i == n)
-				continue;
+				break;
 			putchar(',');
 			putchar(' ');
 		}
