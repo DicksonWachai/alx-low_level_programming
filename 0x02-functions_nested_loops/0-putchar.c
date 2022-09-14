@@ -1,4 +1,3 @@
-#include <unistd.h>
 #include <main.h>
 /**
  * main - Entry point
@@ -9,6 +8,6 @@
  */
 int main(void)
 {
-	write(1, "_putchar", 10);
+	_putchar("_putchar\n");
 	return (0);
 }
