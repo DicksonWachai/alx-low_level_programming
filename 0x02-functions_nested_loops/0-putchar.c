@@ -1,13 +1,14 @@
-#include <stdio.h>
+#include <unistd.h>
+#include <main.h>
 /**
  * main - Entry point
  *
- * Description: Print word
+ * Description: Print
  *
- * Return: 0
+ * Return: Always 0
  */
 int main(void)
 {
-	printf("_putchar\n");
+	write(1, "_putchar", 10);
 	return (0);
 }
