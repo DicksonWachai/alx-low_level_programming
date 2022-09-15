@@ -2,7 +2,7 @@
 /**
  * print_to_98 - prints integers from input to 98
  *
- * @i: value of input
+ * @n: value of input
  */
 void print_to_98(int n)
 {
