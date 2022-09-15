@@ -10,7 +10,7 @@
 int print_last_digit(int i)
 {
 	int lastDigit;
-	lastDigit = n % 10;
+	lastDigit = i % 10;
 
-	printf("%d", lastDigit);
+	_putchar(lastDigit + '0');
 }
