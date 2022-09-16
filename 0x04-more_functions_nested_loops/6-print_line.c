@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_line - draws a straight line
- * @n: number of times a character should be printed
+ * print_line - prints the shortest distance
+ * @n: number of times a character is printed
  */
 void print_line(int n)
 {
@@ -14,6 +14,5 @@ void print_line(int n)
 			_putchar('_');
 		}
 	}
-
 	_putchar('\n');
-}	
+}
