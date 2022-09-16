@@ -5,13 +5,14 @@
  */
 void print_line(int n)
 {
+	int len;
+
 	if (n > 0)
 	{
-		_putchar(n * '_');
-		_putchar('\n');
+		for (len = 0; len < n; len++)
+		{
+			_putchar('_');
+		}
 	}
-	else
-	{
-		_putchar('\n');
-	}
-}
+	_putchar('\n');
+}	
