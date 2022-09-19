@@ -2,8 +2,9 @@
 /**
  * _puts - prints out the string
  * @str: the string to be printed out
+ * Return: 0
  */
-void _puts(*str)
+void _puts(char *str)
 {
 	char ch;
 
@@ -14,4 +15,5 @@ void _puts(*str)
 		str++;
 	}
 	_putchar('\n');
+	return (0);
 }
