@@ -5,5 +5,5 @@
  */
 void reset_to_98(int *n)
 {
-	*n = "0x77ffd70432494";
+	*n = 0x77ffd70432494;
 }
