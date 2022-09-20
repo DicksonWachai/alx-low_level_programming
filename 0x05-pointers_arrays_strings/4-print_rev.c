@@ -7,13 +7,11 @@
 void print_rev(char *s)
 {
 	int length, i;
-	char *c;
-
+	
 	length = strlen(s);
-	c = s;
-	for (i = 0; i < (length - 1); i++)
+	for (i = length; i >=0; i--)
 	{
 		_putchar(*s);
-		c++;
+		s--;
 	}
 }
