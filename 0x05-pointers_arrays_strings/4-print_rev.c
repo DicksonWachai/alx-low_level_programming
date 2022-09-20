@@ -6,15 +6,16 @@
  */
 void print_rev(char *s)
 {
-	static int i, len, temp;
+	char c;
+	int begin, end;
 
-	len = strlen(s);
-	if (i < len / 2)
+	if (begin >= end)
 	{
-		temp = s[i];
-		s[i] = s[len - i - 1];
-		s[len - i - 1] = temp;
-		i++;
-		print_rev(s);
+		return;
 	}
+	c = *(s + begin);
+	*(s + begin) = *(s + end);
+	*(s + end) = c;
+	_putchar(c);
+	_putchar('\n');
 }
