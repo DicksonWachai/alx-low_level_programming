@@ -12,11 +12,11 @@ void print_rev(char *s)
 	length= strlen(s);
 	begin = s;
 	end = s;
-	for (i = 0; i < length -i; i++)
+	for (i = 0; i < (length - i); i++)
 	{
 		end++;
 	}
-	for (i = 0; i < length / 2; i++)
+	for (i = 0; i < (length / 2); i++)
 	{
 		t = *end;
 		*end = * begin;
