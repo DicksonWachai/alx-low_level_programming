@@ -4,14 +4,14 @@
  * _atoi - prints number in the string
  * @s: string to obtain number
  *
+ * Return: the integer value
  */
 int _atoi(char *s)
 {
 	int sign = 1;
 	unsigned int number = 0;
 
-	do
-	{
+	do {
 		if (*s == '-')
 		{
 			sign *= -1;
