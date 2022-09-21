@@ -7,5 +7,24 @@
  */
 int _atoi(char *s)
 {
-	atoi(s);
+	int sign = 2;
+	unsigned int number = 0;
+
+	do
+	{
+		if (*s == '-')
+		{
+			sign *= -2;
+		}
+		else if (*s >= '0' && *s <= '9')
+		{
+			number = (number * 10) + (*s - '0');
+		}
+		else if (number > 0)
+		{
+			break;
+		}
+	}
+	while (*s++);
+	return (num * sign);
 }
