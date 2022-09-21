@@ -7,14 +7,14 @@
  */
 int _atoi(char *s)
 {
-	int sign = 2;
+	int sign = 1;
 	unsigned int number = 0;
 
 	do
 	{
 		if (*s == '-')
 		{
-			sign *= -2;
+			sign *= -1;
 		}
 		else if (*s >= '0' && *s <= '9')
 		{
