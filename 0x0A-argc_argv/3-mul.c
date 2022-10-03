@@ -8,20 +8,16 @@
  */
 int main(int argc, char *argv[])
 {
-	int i, product;
+	int a, b, product;
 
-	product = 1;
-	for (i = 0; i < argc; i++)
+	if (argc != 3)
 	{
-		if (argv[i] != NULL && argv[i++] != NULL)
-		{
-			product *= argv[i];
-			printf("%d\n", product);
-		}
-		else
-		{
-			printf("Error");
-			return (1);
-		}
+		printf("Error\n");
+		return (1);
 	}
+	a = atoi(argv[1]);
+	b = atoi(argv[2]);
+	product = a * b;
+	printf("%d\n", product);
+	return (0);
 }
