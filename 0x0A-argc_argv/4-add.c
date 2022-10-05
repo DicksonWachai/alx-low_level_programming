@@ -3,9 +3,9 @@
 /**
  * main - adds sum of positive numbers
  * @argc: number of arguments
- * @argv: array of arguments
+ * @argv: array of pointers to arguments
  *
- * Retur: sum of positive numbers
+ * Return: 0 or 1
  */
 int main(int argc, char *argv[])
 {
@@ -22,7 +22,7 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		sum += atoi(argv[num]);
+		sum = atoi(argv[num]);
 	}
 	printf("%d\n", sum);
 	return (0);
