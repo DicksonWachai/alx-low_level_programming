@@ -12,7 +12,7 @@ char *_strdup(char *str)
 	int n, len;
 
 	len = 0;
-	if (str == NULL || ptr == NULL)
+	if (str == NULL)
 	{
 		return (NULL);
 	}
@@ -21,6 +21,10 @@ char *_strdup(char *str)
 		len++;
 	}
 	ptr = (char *) malloc(sizeof(char) * (len + 1));
+	if (ptr == NULL)
+	{
+		return (NULL);
+	}
 	for (n = 0; str[n]; n++)
 	{
 		ptr[n] = str[n];
