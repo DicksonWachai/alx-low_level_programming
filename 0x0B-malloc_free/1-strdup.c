@@ -25,6 +25,6 @@ char *_strdup(char *str)
 	{
 		ptr[n] = str[n];
 	}
-	duplicate[len] = '\0';
+	ptr[len] = '\0';
 	return (ptr);
 }
