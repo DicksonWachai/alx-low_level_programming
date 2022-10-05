@@ -12,12 +12,8 @@ char *create_array(unsigned int size, char c)
 	char *ptr;
 	unsigned int n;
 
-	if (size == 0)
-	{
-		return (NULL);
-	}
-	ptr = (char *)malloc(size * sizeof(char));
-	if (ptr == NULL)
+	ptr = (char *) malloc(sizeof(char) * size);
+	if (size == 0 || ptr == NULL)
 	{
 		return (NULL);
 	}
