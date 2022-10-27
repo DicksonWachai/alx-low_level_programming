@@ -1,15 +1,15 @@
 #include "lists.h"
 /**
- * add_nodeint - adds a new node at start
+ * add_nodeint - adds node at the start
+ * @h: pointer to pointer for head node
+ * @n: integer
  *
- * @head: pointer to the head node
- * @n: integer to be added
- *
- * Return: the address of new element or NULL
+ * Return: Address of new node or NULL
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *newNode;
+
 	if (newNode == NULL)
 	{
 		return (NULL);
