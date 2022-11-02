@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_int - converts from base 2 to decimal
+ * binary_to_uint - converts from base 2 to decimal
  * @b: points to a string of characters2
  *
  * Return: converted number or 0
