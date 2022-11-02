@@ -1,1 +1,1 @@
-Bit manipulatopn
+Bit manipulation
