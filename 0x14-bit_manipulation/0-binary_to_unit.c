@@ -1,5 +1,4 @@
 #include "main.h"
-#include <string.h>
 /**
  * binary_to_int - converts from base 2 to decimal
  * @b: points to a string of characters2
