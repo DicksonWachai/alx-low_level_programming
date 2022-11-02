@@ -1,30 +1,31 @@
 #include "main.h"
 /**
  * binary_to_uint - converts from base 2 to decimal
- * @b: points to a string of characters2
+ * @b: pointer to string
  *
- * Return: converted number or 0
+ * Return: converted number
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned value = 0;
+	unsigned int num = 0, mult = 1;
+	int len;
 
-	if (!b)
+	if (b == '\0')
 	{
 		return (0);
 	}
-	while (*b)
+	for (len = 0; b[len];)
 	{
-		if (*b != '0' && *b != '1')
+		len++;
+	}
+	for (len -= 1; len >= 0; len--)
+	{
+		if (b[len] != '0' && b[len] != '1')
 		{
 			return (0);
 		}
-		value << 1;
-		if (*b & 1)
-		{
-			value += 1;
-		}
-		b++;
+		num += (b[len] - '0') * mult;
+		mult *= 2;
 	}
-	return (value);
+	return (num);
 }
